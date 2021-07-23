@@ -1,0 +1,147 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fcfcfc;
+  font-family: helvetica, sans-serif, arial;
+  color: #0a64eb;
+  display: -ms-grid;
+  display: grid;
+}
+
+.navbar {
+  background-color: #97989b;
+}
+
+.navbar .brand {
+  float: left;
+  width: 30%;
+  justify-items: center;
+  text-transform: uppercase;
+}
+
+.navbar .links {
+  float: left;
+  width: 70%;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .links li {
+  display: inline-block;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.main aside {
+  width: 25%;
+  margin-right: 0;
+}
+
+.main main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75%;
+  margin-left: 0;
+}
+
+.main .card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: 5px 5px 5px 5px;
+  text-align: center;
+  font-family: arial;
+}
+
+.main .card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.main .card button:hover {
+  opacity: 0.7;
+}
+
+.main .card img {
+  width: 200px;
+  height: 129px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 0;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+footer {
+  height: 150px;
+  background-color: #000;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=erberona.css.map */
