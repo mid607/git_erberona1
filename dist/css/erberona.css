@@ -6,21 +6,24 @@
 }
 
 body {
-  background-color: black;
+  background-color: #fcfcfc;
   font-family: helvetica, sans-serif, arial;
-  color: #0a64eb;
+  color: rgba(201, 214, 233, 0.151);
   display: -ms-grid;
   display: grid;
 }
 
 .navbar {
-  background-color: #97989b;
+  background-color: #002185;
+  padding: 10px;
 }
 
 .navbar .brand {
   float: left;
   width: 30%;
-  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
 }
 
@@ -35,14 +38,22 @@ body {
   margin: 0;
 }
 
-.navbar .links li {
-  display: inline-block;
+.navbar li {
+  display: block;
   padding: 10px 15px;
   text-transform: uppercase;
+  float: right;
+  border: 1px solid #0633fa;
+  border-radius: 2px;
 }
 
 .clearfix {
   clear: both;
+}
+
+.login {
+  background-color: #000;
+  padding: 15px;
 }
 
 .main {
@@ -71,7 +82,7 @@ body {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 200px;
-  margin: 5px 5px 5px 5px;
+  margin: auto;
   text-align: center;
   font-family: arial;
 }

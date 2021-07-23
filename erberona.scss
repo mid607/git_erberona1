@@ -1,7 +1,7 @@
 //variables:
 $body-color:rgb(252, 252, 252);
 $body-font:helvetica,sans-serif,arial;
-$primary-color:rgb(10, 100, 235);
+$primary-color:rgba(201, 214, 233, 0.151);
 $link:$primary-color;
 $nav_color:gray;
 *{
@@ -16,34 +16,41 @@ body{
     display: grid;
 }
 .navbar{
-  background-color: rgb(151, 152, 155);
-
+  background-color: rgb(0, 33, 133);
+padding: 10px;
   .brand{
     float: left;
     width: 30%;
-  justify-items: center;
+ align-items: center;
     text-transform: uppercase;
   }
   .links{
-    float: left;
+    float:left;
     width: 70%;
   }
 ul{
  list-style: none; 
  padding: 0;
  margin: 0;
+ 
 }
-.links li{
-  display: inline-block;
+ li{
+  display: block;
   padding: 10px 15px;
   text-transform: uppercase;
+  float: right;
+  border:1px solid rgb(6, 51, 250);
+  border-radius: 2px;
 }
 }
   .clearfix{/////important any project/////
     clear: both;
   }
  
-
+.login{
+  background-color: #000;
+  padding: 15px;
+}
  
 
 .main{
@@ -63,7 +70,7 @@ margin-left: 0;
     .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 200px;
-    margin: 5px 5px 5px 5px;
+    margin: auto;
     text-align: center;
     font-family: arial;
       button {
